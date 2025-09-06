@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PureTube Extension Options</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background: #0f0f0f;
+      color: #ffffff;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+    input {
+      margin-right: 10px;
+    }
+    button {
+      background: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>PureTube Extension Settings</h1>
+  <form id="options-form">
+    <label>
+      <input type="checkbox" id="popup-homepage"> Enable popup on YouTube homepage
+    </label>
+    <label>
+      <input type="checkbox" id="popup-videos"> Enable popup on video pages
+    </label>
+    <label>
+      <input type="checkbox" id="popup-search"> Enable popup on search results
+    </label>
+    <button type="submit">Save Settings</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
